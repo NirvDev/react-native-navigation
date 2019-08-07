@@ -72,9 +72,10 @@ public class NavigationActivity extends AppCompatActivity implements DefaultHard
 
     @Override
     public void invokeDefaultOnBackPressed() {
-        if (!navigator.handleBack(new CommandListenerAdapter())) {
-            super.onBackPressed();
-        }
+         //if (!navigator.handleBack(new CommandListenerAdapter())) {
+            //super.onBackPressed();
+             this.moveTaskToBack(true);
+        //}
     }
 
     @Override
